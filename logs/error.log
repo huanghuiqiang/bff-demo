@@ -1,0 +1,18 @@
+[2021-11-10T00:35:04.078] [ERROR] globalError - Cheese is too ripe!
+[2021-11-10T00:35:04.079] [FATAL] globalError - Cheese was breeding ground for listeria.
+[2021-11-10T00:37:58.909] [ERROR] globalError - Cheese is too ripe!
+[2021-11-10T00:37:58.910] [FATAL] globalError - Cheese was breeding ground for listeria.
+[2021-11-10T00:51:49.717] [ERROR] globalError - Cheese is too ripe!
+[2021-11-10T00:51:49.718] [FATAL] globalError - Cheese was breeding ground for listeria.
+[2021-11-10T00:51:55.385] [ERROR] globalError - Cheese is too ripe!
+[2021-11-10T00:51:55.385] [FATAL] globalError - Cheese was breeding ground for listeria.
+[2021-11-10T00:52:51.822] [ERROR] globalError - Cheese is too ripe!
+[2021-11-10T00:52:51.822] [FATAL] globalError - Cheese was breeding ground for listeria.
+[2021-11-10T00:53:45.079] [ERROR] globalError - Cheese is too ripe!
+[2021-11-10T00:53:45.079] [FATAL] globalError - Cheese was breeding ground for listeria.
+[2021-11-10T00:54:01.299] [ERROR] globalError - Cheese is too ripe!
+[2021-11-10T00:54:01.299] [FATAL] globalError - Cheese was breeding ground for listeria.
+[2021-11-10T00:54:15.087] [ERROR] globalError - Cheese is too ripe!
+[2021-11-10T00:54:15.087] [FATAL] globalError - Cheese was breeding ground for listeria.
+[2021-11-10T00:55:27.906] [ERROR] globalError - 自定义错误🙅
+[2021-11-10T00:56:30.493] [ERROR] globalError - ctx.render3 is not a function
