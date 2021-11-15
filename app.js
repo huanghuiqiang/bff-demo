@@ -28,7 +28,7 @@ app.use(staticServer(config.staticDir));
 
 app.use(historyApiFallback({
     index: '/',
-    whiteList: ['/api']
+    whiteList: ['/api/getDataList', 'books']
 }));
 
 errorHandler.error(app, logger);
