@@ -7,6 +7,7 @@ specifiers:
   '@babel/plugin-transform-modules-systemjs': ^7.16.0
   '@babel/preset-env': ^7.16.0
   '@koa/router': ^10.1.1
+  axios: ^0.24.0
   co: ^4.6.0
   koa: ^2.13.4
   koa-static: ^5.0.0
@@ -17,6 +18,7 @@ specifiers:
 
 dependencies:
   '@koa/router': 10.1.1
+  axios: 0.24.0
   co: 4.6.0
   koa: 2.13.4
   koa-static: 5.0.0
@@ -1290,6 +1292,14 @@ packages:
     resolution: {integrity: sha1-trvgsGdLnXGXCMo43owjfLUmw9E=}
     dev: false
 
+  /axios/0.24.0:
+    resolution: {integrity: sha512-Q6cWsys88HoPgAaFAVUb0WpPk0O8iTeisR9IMqy9G8AbO4NlpVknrnQS03zzF9PGAWgO3cgletO3VjV/P7VztA==}
+    dependencies:
+      follow-redirects: 1.14.5
+    transitivePeerDependencies:
+      - debug
+    dev: false
+
   /babel-plugin-dynamic-import-node/2.3.3:
     resolution: {integrity: sha512-jZVI+s9Zg3IqA/kdi0i6UDCybUI3aSBLnglhYbSSjKlV7yF1F/5LWv8MakQmvYpnbJDS6fcBL2KzHSxNCMtWSQ==}
     dependencies:
@@ -1793,6 +1803,16 @@ packages:
 
   /flatted/2.0.2:
     resolution: {integrity: sha512-r5wGx7YeOwNWNlCA0wQ86zKyDLMQr+/RB8xy74M4hTphfmjlijTSSXGuH8rnvKZnfT9i+75zmd8jcKdMR4O6jA==}
+    dev: false
+
+  /follow-redirects/1.14.5:
+    resolution: {integrity: sha512-wtphSXy7d4/OR+MvIFbCVBDzZ5520qV8XfPklSN5QtxuMUJZ+b0Wnst1e1lCDocfzuCkHqj8k0FpZqO+UIaKNA==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
     dev: false
 
   /fresh/0.5.2:
