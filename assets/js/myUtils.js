@@ -36,6 +36,38 @@
     return arr;
   };
 
+  /**
+   * NOTE:
+   * 节流函数
+   * 1. 每隔一段时间执行一次
+   * 2. 首次立刻执行
+   * 3. 如果间隔时间内触发，应该在间隔末尾再执行一次
+   *  
+   */
+  _.throttle = function (cb, t) {
+      let isFirst = true, 
+          execDate = +new Date(),
+          timeoutId = null;
+      return function () {
+          if (isFirst) {
+              cb();
+              execDate = +new Date();
+              isFirst = false;
+          } else {
+              const current = +new Date();
+              if (current - execDate >= t) {
+                  cb();
+                  execDate = +new Date();
+              } else {
+                  timeoutId && clearTimeout(timeoutId); 
+                  const timeWait = t - (+new Date() - execDate);
+                  timeoutId = setTimeout(() => cb(), timeWait);
+              }
+          }
+      }
+
+  }
+
   _.isFunction = function(obj) {
     return typeof obj == 'function' || false;
   };

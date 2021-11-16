@@ -12,6 +12,7 @@
         <li>[[item.id]]-[[item.name]]</li>
         {% endfor %}
     </ul>
+    <button id="btn">click</button>
     <script src="/js/myUtils.js"></script>
     <script>
         _.each([1,2,3], item => {
@@ -20,6 +21,11 @@
         _([1,2,3]).each(item => {
             console.log("item", item);
         })
+
+        function log() {
+            console.log(+new Date());
+        }
+        document.querySelector('#btn').onclick = _.throttle(log, 2000);
     </script>
 </body>
 </html>
