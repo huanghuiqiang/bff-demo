@@ -1,8 +1,8 @@
-import axios from "axios";
+import SafeRequest from "../utils/safeRequest";
 
 class BooksModel {
     getBooksList() {
-        return axios.get('http://localhost:3006/test');
+        return SafeRequest.fetch('http://localhost:3006/test');
     }
 }
 
