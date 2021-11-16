@@ -18,6 +18,12 @@
    * 核心代码，拓展其他方法
    */
   var _ = function (obj) {
+    /**
+     * NOTE:
+     * 判断obj是否是 _ 的实例
+     * 判断this是否是 _ 的实例
+     * 把对象挂载到 wrapped 上
+     */
     if (obj instanceof _) return obj;
     if (!(this instanceof _)) return new _(obj);
     this._wrapped = obj;
@@ -46,8 +52,22 @@
 
   _.mixin = function (obj) {
     _.each(_.functions(obj), function (name) {
+        /** 
+         * NOTE:
+         * 用来拓展自定义方法 */
       var func = (_[name] = obj[name]);
+        /**
+         * NOTE:
+         *  _([1,2,3]).each(item => {
+            console.log("item", item);
+        })
+        执行的关键，挂载到原型链上
+         */
       _.prototype[name] = function () {
+          /**
+           * TODO:
+           * 参数的合并
+           */
         var args = [this._wrapped];
         push.apply(args, arguments);
         // return chainResult(this, func.apply(_, args));
