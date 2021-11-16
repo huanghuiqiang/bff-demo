@@ -12,5 +12,14 @@
         <li>[[item.id]]-[[item.name]]</li>
         {% endfor %}
     </ul>
+    <script src="/js/myUtils.js"></script>
+    <script>
+        _.each([1,2,3], item => {
+            console.log("item", item);
+        })
+        _([1,2,3]).each(item => {
+            console.log("item", item);
+        })
+    </script>
 </body>
 </html>
